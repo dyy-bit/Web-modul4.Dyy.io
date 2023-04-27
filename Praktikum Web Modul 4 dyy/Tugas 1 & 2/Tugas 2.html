@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Tutorial Tugas</title>
+        <style>
+            * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+h5,h3 {
+  text-decoration: underline;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a {
+  color: blue;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Create two columns/boxes that float next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px;
+  background: #ccc;
+  padding: 20px;
+}
+
+/*style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: left;
+  background: #ddd;
+  margin-top: 10px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Dyy web</h1>
+        <h4> Ngoding bareng Dyy-D3 Teknologi Informasi </h4>
+    </div>
+
+    <div class="topnav">
+        <a href="#">Beranda</a>
+        <a href="#">Script</a>
+        <a href="#">Glosarium</a>
+        <a href="#">Tentang</a>
+        <a href="#">Ngoding yuk</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Tutorial Populer : </h2>
+                <h5>Tutorial 1</h5>
+                <p>Berikut merupakan cara bagaimana kita membuat perintah
+                  pada HTML dengan mudah. Bagaimana caranya maka langsung 
+                  saja ke pembahasan perintah dasar HTML</p>
+                  <div><a href="#">more</a></div>
+                 </div>
+
+            <div class="card">
+
+                <h2>Tutorial Terbaru :</h2>
+                <h5>Tutorial 1</h5>
+                <p>Berikut merupakan cara bagaimana kita membuat perintah
+                  pada HTML dengan mudah. Bagaimana caranya maka langsung 
+                  saja ke pembahasan perintah dasar HTML</p>
+                  <div><a href="#">more</a></div>
+
+                <h5>Tutorial 2</h5>
+                <p>Berikut merupakan cara bagaimana kita membuat perintah
+                  pada HTML dengan mudah. Bagaimana caranya maka langsung 
+                  saja ke pembahasan perintah dasar HTML</p>
+                  <div><a href="#">more</a></div>
+
+                <h5>Tutorial 3</h5>
+                <p>Berikut merupakan cara bagaimana kita membuat perintah
+                  pada HTML dengan mudah. Bagaimana caranya maka langsung 
+                  saja ke pembahasan perintah dasar HTML</p>
+                  <div><a href="#">more</a></div>
+                 </div>
+
+            <div class="card">
+              <h2>Tentang</h2>
+              <p>Web ini dibuat untuk mempermudah kalian dalam proses
+                belajar bahasa HTML dengan dasar-dasar yang penting agar nanti 
+                saat kalian membuat sebuah web.</p>
+                 </div>
+                 
+        </div>
+        
+        <div class="rightcolumn">
+          <div class="card">
+              <h3>Arsip</h3>
+              <div><p>Jan 2023</p></div>
+              <div><p>Feb 2023</p></div>
+              <div><p>Mar 2023</p></div>
+
+              <h3>Kategori</h3>
+              <div><p>HTML</p></div>
+              <div><p>CSS</p></div>
+              <div><p>PHP</p></div>
+
+              <h3>Sosial</h3>
+              <div><p>Facebook</p></div>
+              <div><p>Twitter</p></div>
+              <div><p>RSS</p></div>
+          </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>2023-D3TI Politeknik Semen Indonesia</p>
+    </div>
+
+</body>
+
+</html>

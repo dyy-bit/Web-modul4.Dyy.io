@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web Kantin Online Tugas 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+        box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+.header {
+  padding: 30px;
+  text-align: left;
+  background: black;
+}
+
+.header h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.header h4 {
+  color: white;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: red;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+nav {
+    float: left;
+    width: 30%;
+    height: 300px;
+    background: #ccc;
+    padding: 20px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+.tombol {
+  display: block;
+  max-width: 150px;
+  padding: 15px 30px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  background: #038ade;
+  cursor: pointer;
+}
+
+.rightcolumn {
+    float: right;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+.card img {
+  width: 85%;
+}
+
+.card h3 {
+  display: block;
+  max-height: 150px;
+  padding: 10px;
+  background-color: red;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card h2 {
+  text-align: center;
+  color: purple;
+}
+
+.card h4 {
+  text-align: center;
+}
+
+.card h5 {
+  color: #555;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card p {
+  margin-bottom: 12px;
+}
+
+.border-box {
+  border-bottom: 2px solid #ccc;
+  color: #555;
+  text-align: center;
+  scroll-padding-inline: 20px;
+  margin: 0 0 20px;
+}
+
+.tombol.selengkapnya {
+  background: orange;
+}
+.tombol.pesan {
+  background: green;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    text-decoration-color: #fff;
+    background: #ddd;
+    background-color: red;
+    margin-top: 20px;
+}
+
+.footer h4 {
+  color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+    </style>
+    
+</head>
+<body>
+
+    <div class="header">
+        <h1>Kuliner Indonesia</h1>
+        <h4>Kantin Online Dyy-D3TI</h4>
+    </div>
+
+    <div class="topnav">
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Store</a>
+    </div>
+
+    <img src="nasi bakar.jpg" height="350px" width="100%">
+
+
+    <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>Rendang Limosin</h2>
+            <h5>Diposting pada 07.31 WIB, April 26, 2023</h5>
+            <img src="rendang.jpg" alt="blog">
+            <p>Kuliner Khas Padang</p>
+            <a class="tombol selengkapnya" href="#">Selengkapnya</a>
+          </div>
+          <div class="card">
+            <h2>Nasi Goreng Epic</h2>
+            <h5>Diposting pada 07.35 WIB, April 26, 2023</h5>
+            <img src="Nasgor.jpg" alt="blog" height="">
+            <p>Kuliner Khas Kaki Lima</p>
+            <a class="tombol selengkapnya" href="#">Selengkapnya</a>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h3>Pemesanan</h3>
+            <p>Isi Form Pemesanan dengan Klik Tombol dibawah ini</p>
+            <a class="tombol pesan" href="#">Pesan</a>
+          </div>
+          <div class="card">
+            <h3>Jadwal Buka</h3>
+            <img class="center" src="opor.jpg" alt="blog">
+            <h4>Jadwal Buka</h4>
+            <p>Senin-Jum'at 07.00 WIB - 22.00 WIB</p>
+          </div>
+          <div class="card">
+            <section class="border-box">
+            <h3>Menu Lainnya</h3>
+            <div><a href="#"><p>Paket Menu 1</p></a></div>
+            <div><a href="#"><p>Paket Menu 2</p></a></div>
+            <div><a href="#"><p>Paket Menu 3</p></a></div>
+            <div><a href="#"><p>Paket Menu 4</p></a></div>
+            <div><a href="#"><p>Paket Menu 5</p></a></div>
+            </section>
+          </div>
+        </div>
+      </div>
+    
+
+    <div class="footer">
+        <h4>@copyright 2023 || by Dyy-D3TI Design Web</h4>
+    </div>
+
+</body>
+</html>
